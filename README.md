@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siwa Links</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      /* 🌈 Gradient background */
+      background: linear-gradient(-45deg, #1e1e1e, #2c3e50, #000000, #434343);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    /* 🎬 Animation gradient */
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 🌀 Fade-in ทั้งหน้า */
+    body {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      animation: slideDown 1s ease;
+    }
+
+    /* ⬇️ Slide title ลงมา */
+    @keyframes slideDown {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 10px 0;
+      padding: 15px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-weight: bold;
+      backdrop-filter: blur(10px);
+
+      transition: all 0.3s ease;
+
+      /* ✨ animation ปุ่ม */
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    /* delay ทีละปุ่ม */
+    a:nth-child(2) { animation-delay: 0.3s; }
+    a:nth-child(3) { animation-delay: 0.5s; }
+    a:nth-child(4) { animation-delay: 0.7s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    a:hover {
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Siwa Links</h1>
+
+  <a href="https://www.instagram.com/siwa._.2007" target="_blank">📸 Instagram</a>
+  <a href="https://www.tiktok.com/@siwachaphakdee" target="_blank">🎵 TikTok</a>
+  <a href="https://www.facebook.com/share/1B7tksvzht/" target="_blank">📘 Facebook</a>
+
+</body>
+</html>
